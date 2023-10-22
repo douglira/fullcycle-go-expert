@@ -17,18 +17,13 @@ type Customer struct {
 	Address // Composição de Structs sem declarar explicitamente uma propriedade
 }
 
-func StructsLesson() {
-	titleLesson := `
-	########################################################################
-	############################ STRUCTS ####################################
-	########################################################################
-	`
-	fmt.Println(titleLesson)
+func StructsLesson(titleTemplate, title string) {
+	fmt.Printf(titleTemplate, title)
 	p1 := Customer{
 		Name:   "Douglas",
 		Age:    28,
 		Enable: true,
 	}
 	p1.Address.Country = "Brazil"
-	fmt.Println(p1.Address.Country)
+	println(p1.Address.Country)
 }

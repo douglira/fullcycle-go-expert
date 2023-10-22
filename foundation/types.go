@@ -6,13 +6,8 @@ type ID int
 
 var a ID = 1
 
-func TypesLesson() {
-	titleLesson := `
-	########################################################################
-	############################ TYPES ####################################
-	########################################################################
-	`
-	fmt.Println(titleLesson)
+func TypesLesson(titleTemplate, title string) {
+	fmt.Printf(titleTemplate, title)
 	/*
 		%T - Mostra o tipo da variável
 	*/
