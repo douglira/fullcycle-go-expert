@@ -6,7 +6,8 @@ import (
 )
 
 type Car struct {
-	brand string
+	Brand        string
+	BrandPointer *string
 }
 
 func PointersLesson(titleTemplate, title string) {
@@ -39,19 +40,54 @@ func PointersLesson(titleTemplate, title string) {
 		Para trabalhar com valores mutáveis, utilize ponteiros nos argumentos
 		da função.
 	*/
-	c1 := Car{brand: "bmw"}
+	c1 := Car{Brand: "bmw"}
 	toUppercase(c1)
-	println(c1.brand)
+	println(c1.Brand)
 	// R: bmw
 	toUppercasePointer(&c1)
-	println(c1.brand)
+	println(c1.Brand)
 	// R: BMW
+
+	c2 := Car{Brand: "audi"}
+	c2.toUppercase()
+	println(c2.Brand)
+	// R: audi
+
+	audiBrand := "audi"
+	c3 := Car{BrandPointer: &audiBrand}
+	c3.toUppercasePointer()
+	println(*c3.BrandPointer)
+	// R: AUDI
+
+	c4 := &Car{Brand: "porsche"}
+	c4.toUppercasePointer2()
+	println(c4.Brand)
+	// R: PORSCHE
 }
 
 func toUppercase(c Car) {
-	c.brand = strings.ToUpper(c.brand)
+	c.Brand = strings.ToUpper(c.Brand)
 }
 
 func toUppercasePointer(c *Car) {
-	c.brand = strings.ToUpper(c.brand)
+	c.Brand = strings.ToUpper(c.Brand)
+}
+
+func (c Car) toUppercase() {
+	brandLowercase := c.Brand
+	c.Brand = strings.ToUpper(brandLowercase)
+}
+
+/*
+Propriedade como ponteiro altera o valor no endereço de memória (MUTÁVEL)
+*/
+func (c Car) toUppercasePointer() {
+	*c.BrandPointer = strings.ToUpper(*c.BrandPointer)
+}
+
+/*
+Objeto como ponteiro altera o valor no endereço de memória (MUTÁVEL)
+*/
+func (c *Car) toUppercasePointer2() {
+	c.Brand = strings.ToUpper(c.Brand)
 }
