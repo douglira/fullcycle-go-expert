@@ -2,9 +2,7 @@ package foundation
 
 import "fmt"
 
-func SlicesLesson(titleTemplate, title string) {
-	fmt.Printf(titleTemplate, title)
-
+func SlicesLesson() {
 	s := []int{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
 	fmt.Printf("1- len=%d cap=%d %v\n", len(s), cap(s), s)
 	/*

@@ -1,7 +1,6 @@
 package foundation
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -10,9 +9,7 @@ type Car struct {
 	BrandPointer *string
 }
 
-func PointersLesson(titleTemplate, title string) {
-	fmt.Printf(titleTemplate, title)
-
+func PointersLesson() {
 	/*
 		Declara uma nova variável com o mesmo ponteiro da variável
 		que está sendo atribuída

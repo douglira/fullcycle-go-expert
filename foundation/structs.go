@@ -1,7 +1,5 @@
 package foundation
 
-import "fmt"
-
 type Address struct {
 	Street   string
 	City     string
@@ -17,8 +15,7 @@ type Customer struct {
 	Address // Composição de Structs sem declarar explicitamente uma propriedade
 }
 
-func StructsLesson(titleTemplate, title string) {
-	fmt.Printf(titleTemplate, title)
+func StructsLesson() {
 	p1 := Customer{
 		Name:   "Douglas",
 		Age:    28,
