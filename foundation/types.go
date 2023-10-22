@@ -1,4 +1,4 @@
-package main
+package foundation
 
 import "fmt"
 
@@ -6,7 +6,13 @@ type ID int
 
 var a ID = 1
 
-func typesLesson() {
+func TypesLesson() {
+	titleLesson := `
+	########################################################################
+	############################ TYPES ####################################
+	########################################################################
+	`
+	fmt.Println(titleLesson)
 	/*
 		%T - Mostra o tipo da variável
 	*/

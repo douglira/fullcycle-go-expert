@@ -1,8 +1,15 @@
-package main
+package foundation
 
 import "fmt"
 
-func slicesLesson() {
+func SlicesLesson() {
+	titleLesson := `
+	########################################################################
+	############################ SLICES ####################################
+	########################################################################
+	`
+	fmt.Println(titleLesson)
+
 	s := []int{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
 	fmt.Printf("1- len=%d cap=%d %v\n", len(s), cap(s), s)
 	/*
