@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/douglira/fullcycle-go-expert/core_packages"
+	"github.com/douglira/fullcycle-go-expert/core"
 	"github.com/douglira/fullcycle-go-expert/foundation"
 )
 
@@ -33,7 +33,7 @@ func main() {
 		Lesson{"FOUNDATION", "TYPE ASSERTATION", foundation.TypeAssertationLesson},
 		Lesson{"FOUNDATION", "GENERICS", foundation.GenericsLesson},
 
-		Lesson{"CORE PACKAGES", "FILE MANIPULATION", core_packages.FileManipulationLesson},
-		Lesson{"CORE PACKAGES", "DEFER", core_packages.DeferLesson},
+		Lesson{"CORE PACKAGES", "FILE MANIPULATION", core.FileManipulationLesson},
+		Lesson{"CORE PACKAGES", "DEFER", core.DeferLesson},
 	)
 }
