@@ -19,7 +19,7 @@ O WaitGroup irá aguardar uma quantidade de processos/operações a serem
 finalizadas. Neste exemplo, serão 25 operações pois o número total de
 loopings efetuados são 25.
 */
-func WaitGroupLesson() {
+func main() {
 	wg := sync.WaitGroup{}
 	wg.Add(25)
 	go task("A", &wg)
