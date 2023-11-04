@@ -3,6 +3,8 @@ go 1.21.3
 use (
 	./cepsearch
 	./contexts/server-timeout
-	./multithreading/wait-groups
+	./multithreading/channels-range
+	./multithreading/channels-with-wait-groups
 	./multithreading/mutex
+	./multithreading/wait-groups
 )
