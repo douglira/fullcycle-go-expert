@@ -3,10 +3,10 @@ go 1.21.3
 use (
 	./cepsearch
 	./contexts/server-timeout
+	./multithreading/channels-directions
 	./multithreading/channels-range
 	./multithreading/channels-with-wait-groups
+	./multithreading/goroutines-load-balancer
 	./multithreading/mutex
 	./multithreading/wait-groups
-	./multithreading/channels-directions
-	./multithreading/goroutines-load-balancer
 )
