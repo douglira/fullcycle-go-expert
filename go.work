@@ -7,4 +7,6 @@ use (
 	./multithreading/channels-with-wait-groups
 	./multithreading/mutex
 	./multithreading/wait-groups
+	./multithreading/channels-directions
+	./multithreading/goroutines-load-balancer
 )
