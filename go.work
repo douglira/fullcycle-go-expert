@@ -5,6 +5,7 @@ use (
 	./contexts/server-timeout
 	./multithreading/channels-directions
 	./multithreading/channels-range
+	./multithreading/channels-select
 	./multithreading/channels-with-wait-groups
 	./multithreading/goroutines-load-balancer
 	./multithreading/mutex
