@@ -3,6 +3,7 @@ go 1.21.3
 use (
 	./cepsearch
 	./contexts/server-timeout
+	./multithreading/channels-buffering
 	./multithreading/channels-directions
 	./multithreading/channels-range
 	./multithreading/channels-select
